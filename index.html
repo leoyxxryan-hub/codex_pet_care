@@ -31,7 +31,8 @@
         margin: 0;
         color: var(--ink);
         font-family:
-          Inter, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+          "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei UI",
+          "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
         background: var(--paper);
         line-height: 1.6;
       }
@@ -89,9 +90,11 @@
       .nav-links {
         display: flex;
         align-items: center;
-        gap: 26px;
-        color: var(--muted);
-        font-size: 15px;
+        gap: 30px;
+        color: #45554f;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1;
       }
 
       .nav-links a:hover {
@@ -100,15 +103,19 @@
 
       .nav-links a {
         position: relative;
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 0 2px;
         transition: color 0.2s ease;
       }
 
       .nav-links a::after {
         position: absolute;
         right: 0;
-        bottom: -8px;
+        bottom: 3px;
         left: 0;
-        height: 2px;
+        height: 3px;
         border-radius: 999px;
         background: var(--mint-strong);
         content: "";
@@ -236,11 +243,14 @@
       }
 
       .hero h1 {
-        max-width: 620px;
+        max-width: 680px;
         margin: 0;
-        font-size: clamp(42px, 7vw, 82px);
-        line-height: 1.04;
+        color: #243832;
+        font-size: 64px;
+        font-weight: 850;
+        line-height: 1.08;
         letter-spacing: 0;
+        text-wrap: balance;
       }
 
       .hero p {
@@ -1017,9 +1027,10 @@
         .nav-links {
           width: 100%;
           justify-content: space-between;
-          gap: 12px;
+          gap: 18px;
           overflow-x: auto;
           padding-bottom: 4px;
+          font-size: 16px;
         }
 
         .nav-cta {
@@ -1039,6 +1050,11 @@
 
         .hero img {
           object-position: 60% center;
+        }
+
+        .hero h1 {
+          max-width: 620px;
+          font-size: 56px;
         }
 
         .section-head,
@@ -1088,6 +1104,11 @@
         .hero-inner {
           align-content: start;
           padding-top: 48px;
+        }
+
+        .hero h1 {
+          font-size: 42px;
+          line-height: 1.12;
         }
 
         .hero p {
