@@ -31,7 +31,8 @@
         margin: 0;
         color: var(--ink);
         font-family:
-          Inter, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+          "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei UI",
+          "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
         background: var(--paper);
         line-height: 1.6;
       }
@@ -89,9 +90,11 @@
       .nav-links {
         display: flex;
         align-items: center;
-        gap: 26px;
-        color: var(--muted);
-        font-size: 15px;
+        gap: 30px;
+        color: #45554f;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1;
       }
 
       .nav-links a:hover {
@@ -100,15 +103,19 @@
 
       .nav-links a {
         position: relative;
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 0 2px;
         transition: color 0.2s ease;
       }
 
       .nav-links a::after {
         position: absolute;
         right: 0;
-        bottom: -8px;
+        bottom: 3px;
         left: 0;
-        height: 2px;
+        height: 3px;
         border-radius: 999px;
         background: var(--mint-strong);
         content: "";
@@ -1017,9 +1024,10 @@
         .nav-links {
           width: 100%;
           justify-content: space-between;
-          gap: 12px;
+          gap: 18px;
           overflow-x: auto;
           padding-bottom: 4px;
+          font-size: 16px;
         }
 
         .nav-cta {
